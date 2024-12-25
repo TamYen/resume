@@ -4,8 +4,9 @@
         <title>履歴書</title>
         <style type="text/css">
             body {
-                margin: 30px 35px 30px 35px; /* 上 右 下 左 */
-                /* margin: 0; */ /* PDF出力時は余白なしにした方が印刷設定側で余白を調節しやすい */
+                margin: 30px 35px 30px 35px;
+                /* PDF出力時は余白なしにした方が印刷設定側で余白を調節しやすい */
+                /* margin: 0; */
                 font-family: Meiryo, sans-serif;
                 color: #333333;
                 line-height: 1.1;
@@ -148,7 +149,7 @@
                 </td>
             </tr>
         </table>
-        <table width="100%" style="margin-top: 1.2em;">
+        <table width="100%" style="margin-top: 1.2em;" id="experiences">
             <tr>
                 <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">
                     <b style="font-size: 86%;">年</b>
@@ -160,111 +161,9 @@
                     <b style="font-size: 86%;">学歴・職歴</b>
                 </td>
             </tr>
-            <!-- 学歴 見出し行 (編集不要) -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2m; text-align: center;"></td>
-                <td style="text-align: center;">
-                    学 &nbsp; 歴
-                </td>
-            </tr>
-            <!-- 学歴 中学校 卒業 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2012</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">5</td>
-                <td style="">Song Ray 中学校 (ドンナイ省) 卒業</td>
-            </tr>
-            <!-- 学歴 高等学校 入学 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2015</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">5</td>
-                <td style="">Song Ray 高等学校 (ドンナイ省) 卒業</td>
-            </tr>
-            <!-- 学歴 高等学校 卒業 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2015</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">9</td>
-                <td style="">越日工業大学 情報技術学科 入学</td>
-            </tr>
-            <!-- 学歴 大学 入学 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2020</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">3</td>
-                <td style="">越日工業大学 情報技術学科 卒業</td>
-            </tr>
-            <!-- 職歴 見出し行 (編集不要) -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2m; text-align: center;"></td>
-                <td style="text-align: center;">
-                    職 &nbsp; 歴
-                </td>
-            </tr>
-            <!-- 職歴 1社目 入社 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2018</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">6</td>
-                <td style="">NEC VIETNAM インターン生 2018年8月まで</td>
-            </tr>
-            <!-- 職歴 1社目 退社 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2019</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">5</td>
-                <td style="">FOIS VIETNAM インターン生 2020年4月まで</td>
-            </tr>
-            <!-- 職歴 2社目 入社 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2020</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">5</td>
-                <td style="">FOIS VIETNAM 開発者 2021年2月まで</td>
-            </tr>
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2020</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">10</td>
-                <td style="">ISB VIETNAM テスター (FOISの社員として働く)</td>
-            </tr>
-            <!-- 職歴 3社目 入社 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2021</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">4</td>
-                <td style="">REM VIETNAM 開発者</td>
-            </tr>
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2023</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">2</td>
-                <td style="">REM VIETNAM BrSE&チームリーダー</td>
-            </tr>
-            <!-- 職歴 現在の状態 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;"></td>
-                <td style="">
-                    現在、同社 在職中
-                </td>
-            </tr>
-            <!-- 学歴・職歴 以上 (編集不要) -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">
-                    以 &nbsp; 上 &nbsp; 
-                </td>
-            </tr>
-            <!-- 学歴・職歴 余白 -->
-            <!-- <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">&nbsp;</td>
-            </tr> -->
-            <!-- 学歴・職歴 余白 -->
-            <!-- <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">&nbsp;</td>
-            </tr> -->
         </table>
-        <br/>
-        <table width="100%" style="margin-top: 1.2em;">
+        <!-- <br/> -->
+        <table width="100%" style="margin-top: 1.2em;" id="certificates">
             <tr>
                 <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">
                     <b style="font-size: 86%;">年</b>
@@ -276,47 +175,41 @@
                     <b style="font-size: 86%;">免許・資格</b>
                 </td>
             </tr>
-            <!-- 免許・資格 1 -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;">2019</td>
-                <td style="border-left: 0; width: 1.2em; text-align: center;">12</td>
-                <td style="">日本語能力試験JLPT N3 合格</td>
-            </tr>
-            <!-- 免許・資格 2 -->
-            <!-- 免許・資格 以上 (編集不要) -->
-            <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">
-                    以 &nbsp; 上 &nbsp; 
-                </td>
-            </tr>
-            <!-- 免許・資格 余白 -->
-            <!-- <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">&nbsp;</td>
-            </tr> -->
-            <!-- 免許・資格 余白 -->
-            <!-- <tr>
-                <td style="border-right: 1px dashed #333333; width: 2.8em; text-align: center;"></td>
-                <td style="border-left: 0; width: 1.2em; "></td>
-                <td style="text-align: right;">&nbsp;</td>
-            </tr> -->
         </table>
         <table width="100%" style="margin-top: 1.2em;">
             <tr>
                 <td style="">
-                    <b style="font-size: 86%;">志望動機</b>
+                    <b style="font-size: 86%;">特技・得意点</b>
                 </td>
             </tr>
             <tr>
-                <td style="height: 14em; vertical-align:top;">
+                <td>
                     <!-- 志望動機 -->
                     <ul style="font-size: 100%;">
-                        <li>ここに志望動機を書きます。</li>
-                        <li>さらに志望動機を書きます。</li>
+                        <li>得意な言語: PHP, SQL, JS</li>
+                        <li>フレームワーク: Laravel</li>
+                        <li>PB作成とUML描く</li>
+                        <li>ルールを守る人</li>
+                        <li>チームワーク</li>
                     </ul>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" style="margin-top: 1.2em;">
+            <tr>
+                <td colspan="2" style="">
+                    <b style="font-size: 86%;">将来の目的</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- 自己PR -->
+                    <ul style="font-size: 100%;">
+                        <li>tập trung nâng cao khả năng tiếng nhật để làm tốt vai trò của một BrSE (có thể đảm nhận cho 1 team khoảng 10 người)</li>
+                        <li>có thể sử dụng những ngôn ngữ, framework khác ngoài php và laravel</li>
+                        <li>mong muốn đảm nhận vai trò quản lý chất lượng sản phẩm ở tương lai xa hơn</li>
+                    </ul>
+                    <br>
                 </td>
             </tr>
         </table>
@@ -327,12 +220,19 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="height: 14em; vertical-align:top;">
+                <td colspan="2">
                     <!-- 自己PR -->
-                    <ul style="font-size: 100%;">
-                        <li>ここに自己PRを書きます。</li>
-                        <li>さらに自己PRを書きます。</li>
-                    </ul>
+                    ngoài việc đảm nhận vị trí của 1 develpoer (4 năm)
+                    <br>
+                    song song với đó có 2 năm kinh nghiệm đối vơi vai trò BrSE & team leader.
+                    <br>
+                    tôi tự tin trong việc chọn hướng tiếp cận và hỗ trợ member để cùng nhau hoàn thành công việc (cả về kỹ thuật và chức năng của sản phẩm).
+                    <br>
+                    về vai trò của BrSE tôi chưa thực sự giao tiếp tốt với khách hàng, nhưng đối với team dev JP tôi có thể trao đổi trực tiếp với họ và hỗ trợ team dev VN.
+                    <br>
+                    tôi đang tiếp tục nâng cao kinh nghiệm và kĩ năng của mình để đóng góp cho công ty.
+                    <br>
+                    <br>
                 </td>
             </tr>
         </table>
@@ -390,4 +290,76 @@
             </tr>
         </table>
     </body>
+
+    <script>
+        function fillExperiences() {
+            // list of experiences
+            const experiences = [
+                ['', '', '学歴', 'center'],
+                ['2012', '5', 'Song Ray 中学校 (ドンナイ省) 卒業', ''],
+                ['2015', '5', 'Song Ray 高等学校 (ドンナイ省) 卒業', ''],
+                ['2015', '9', '越日工業大学 情報技術学科 入学', ''],
+                ['2020', '3', '越日工業大学 情報技術学科 卒業', ''],
+                ['', '', '職歴', 'center'],
+                ['2018', '6', 'NEC VIETNAM インターン生 (3ヶ月間)', ''],
+                ['', '', 'learn java spring framework and jquery', ''],
+                ['2020', '5', 'FOIS VIETNAM 開発者 2021年2月まで', ''],
+                ['', '', 'phát triển web tuyển dụng dành cho sinh viên mới ra trường (fuel)', ''],
+                ['2020', '10', 'ISB VIETNAM テスター (FOISの社員として働く)', ''],
+                ['', '', 'kiểm thử trang web banker', ''],
+                ['2021', '4', 'REM VIETNAM 開発者', ''],
+                ['', '', 'phát triển các trang dự đoán kết quả đua ngựa (laravel, Code igitor)', ''],
+                ['2023', '2', 'REM VIETNAM BrSE&チームリーダー', ''],
+                ['', '', 'tiếp tục phát triển các trang đua ngựa', ''],
+                ['', '', 'phát triển trang web quản lí nội bộ của công ty (laravel)', ''],
+                ['', '', 'tạo chatbot trả lời về quy định của công ty (openai assistant)', ''],
+                ['', '', 'phát triển trang hẹn hò uống rượu (laravel)', ''],
+                ['', '', 'app đặt sân bóng (laravel & flutter)', ''],
+                ['', '', '現在、同社 在職中', 'left'],
+                ['', '', '以上', 'right'],
+            ];
+            const certificates = [
+                ['2019', '12', '日本語能力試験JLPT N3 合格', ''],
+                ['', '', '以上', 'right'],
+            ];
+            // fill to second row of experiences table
+            const experiencesTable = document.getElementById('experiences');
+            experiences.forEach(detail => {
+                const row = document.createElement('tr');
+                const td0 = document.createElement('td');
+                const td1 = document.createElement('td');
+                const td2 = document.createElement('td');
+                td0.textContent = detail[0];
+                td0.style.borderRight = '1px dashed #333333';
+                td1.textContent = detail[1];
+                td1.style.borderLeft = '0';
+                td2.textContent = detail[2];
+                td2.style.textAlign = detail[3];
+                row.appendChild(td0);
+                row.appendChild(td1);
+                row.appendChild(td2);
+                experiencesTable.appendChild(row);
+            });
+            // fill to second row of experiences table
+            const certificatesTable = document.getElementById('certificates');
+            certificates.forEach(detail => {
+                const row = document.createElement('tr');
+                const td0 = document.createElement('td');
+                const td1 = document.createElement('td');
+                const td2 = document.createElement('td');
+                td0.textContent = detail[0];
+                td0.style.borderRight = '1px dashed #333333';
+                td1.textContent = detail[1];
+                td1.style.borderLeft = '0';
+                td2.textContent = detail[2];
+                td2.style.textAlign = detail[3];
+                row.appendChild(td0);
+                row.appendChild(td1);
+                row.appendChild(td2);
+                certificatesTable.appendChild(row);
+            });
+        }
+        // call fillExperiences onload
+        window.onload = fillExperiences;
+    </script>
 </html>
