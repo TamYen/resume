@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .pr-section p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">技術者経歴書 (Technical Resume)</h1>
+
+    <!-- Bảng thông tin chính -->
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>SEX</th>
+            <th>Age</th>
+            <th>Years of experience</th>
+            <th>Housing Place</th>
+            <th>Qualifications</th>
+        </tr>
+        <tr>
+            <th></th>
+            <td>Nguyen Duc Trung</td>
+            <td>Male</td>
+            <td>27</td>
+            <td>4 years and 6 months</td>
+            <td>Ho Chi Minh City</td>
+            <td>Japanese: JLPT N3</td>
+        </tr>
+        <tr>
+            <th>PR</th>
+            <th colspan="6" style="text-align: left;">
+                I graduated from Ho Chi Minh City University of Technology - HUTECH.<br>
+                I use Java, PHP languages.<br>
+                I program and create testcases based on Japanese documents.<br>
+                I am trying to accumulate knowledge, experience and ability to use Japanese, aiming to become a Bridge Engineer (BrSE) in the next 5 years.
+            </th>
+        </tr>
+    </table>
+
+    <!-- Phần PR -->
+    <div class="pr-section">
+        <p>卒業: Trường Đại học Công nghệ Tp.HCM - HUTECH.</p>
+        <p>Ngôn ngữ sử dụng: Java, PHP.</p>
+        <p>Lập trình và tạo testcase dựa trên tài liệu tiếng Nhật.</p>
+        <p>Tôi đang nỗ lực tích lũy kiến thức, kinh nghiệm và khả năng sử dụng tiếng Nhật, mục tiêu trở thành Kỹ sư cầu nối (BrSE) trong 5 năm tới.</p>
+    </div>
+
+    <!-- Kỹ năng -->
+    <div class="section-title">技術 (Skill)</div>
+    <table>
+        <tr>
+            <th rowspan="2">OS</th>
+            <td>Windows</td>
+            <td>iOS</td>
+            <td>Android</td>
+            <td>UNIX/AIX</td>
+            <td>Linux</td>
+            <td>その他</td>
+            <td colspan="2">サーバ構築</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td></td>
+            <td>C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th rowspan="2">DB</th>
+            <td>SQLServer</td>
+            <td>MySQL</td>
+            <td>MongoDB</td>
+            <td>PostgreSQL</td>
+            <td>Realm</td>
+            <td>Room</td>
+            <td colspan="2">Framework</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>B</td>
+            <td>C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th rowspan="2">開発言語</th>
+            <td>Java</td>
+            <td>Kotlin</td>
+            <td>JavaScript</td>
+            <td>Dark/Flutter</td>
+            <td>React Native</td>
+            <td>PHP</td>
+            <td>C#</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td></td>
+            <td>B</td>
+            <td></td>
+            <td></td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+
+    <!-- Kinh nghiệm làm việc -->
+    <div class="section-title">業務経験 (Work Experience)</div>
+    <table id="experiences">
+        <!-- header -->
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">期間<br>Start</th>
+            <th rowspan="2">期間<br>End</th>
+            <th rowspan="2">業務内容<br>Business Content</th>
+            <th rowspan="2">職務内容<br>Area of Responsibility</th>
+            <th rowspan="2">User</th>
+            <th colspan="3">関連機種ソフト</th>
+        </tr>
+        <tr>
+            <th>機種/OS</th>
+            <th>DB/DC他</th>
+            <th>使用言語<br>Development Language</th>
+        </tr>
+        <!-- content -->
+        <tr>
+            <td>1</td>
+            <td>2020年5月</td>
+            <td>2020年9月</td>
+            <td style="text-align: left;">
+                Job search site for new graduates
+                <br>
+                Position: Programmer, Tester
+                <br>
+                Team members: 7
+            </td>
+            <td style="text-align: left;">
+                Programming (programming)
+                <br>
+                単体テスト (Unit test)
+            </td>
+            <td>Human Resource</td>
+            <td>Windows</td>
+            <td>MySQL</td>
+            <td>
+                PHP (Fuel)
+                <br>
+                JS (jQuery)
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function fillExperiences() {
+        const experiences = [
+            {
+                no: 1,
+                start: '2020年5月',
+                end: '2020年9月',
+                businessContent: [
+                    'Web system for managing customer information',
+                    'Position: Programmer, Tester',
+                    'Team members: 5'
+                ],
+                areaOfResponsibility: [
+                    'Programming (programming)',
+                    '単体テスト (Unit test)'
+                ],
+                user: 'Human Resource',
+                machineOS: 'Windows',
+                db: 'MySQL',
+                developmentLanguage: [
+                    'PHP (Laravel)',
+                    'JS (JQuery)'
+                ]
+            },
+            {
+                no: 2,
+                start: '2020年10月',
+                end: '2021年2月',
+                businessContent: [
+                    'Financial management system',
+                    'Position: Tester',
+                    'Team members: 45'
+                ],
+                areaOfResponsibility: [
+                    '単体テスト (Unit test)'
+                ],
+                user: 'Banker',
+                machineOS: 'Windows',
+                db: 'PosgreSQL',
+                developmentLanguage: [
+                    'JS (ReactJS)'
+                ]
+            },
+            {
+                no: 3,
+                start: '2021年4月',
+                end: 'now',
+                businessContent: [
+                    'Horse racing prediction sites',
+                    'Position: Programmer, BrSE',
+                    'Team members: 3',
+                ],
+                areaOfResponsibility: [
+                    'プログラミング (Programming)',
+                    'システムテスト (System test)',
+                    '仕様書作成 (Create specification)',
+                    'デモ (demo)',
+                ],
+                user: 'Horse racing fans',
+                machineOS: 'macOS',
+                db: 'Mysql, google sheet',
+                developmentLanguage: [
+                    'PHP (Laravel, CodeIgniter)',
+                    'JS (JQuery, VueJS)',
+                ]
+            },
+            {
+                no: 3,
+                start: '2022年2月',
+                end: 'now',
+                businessContent: [
+                    'Horse racing prediction sites',
+                    'Position: Programmer, BrSE',
+                    'Team members: 3',
+                ],
+                areaOfResponsibility: [
+                    'プログラミング (Programming)',
+                    'システムテスト (System test)',
+                    '仕様書作成 (Create specification)',
+                    'デモ (demo)',
+                ],
+                user: 'Horse racing fans',
+                machineOS: 'macOS',
+                db: 'Mysql, google sheet',
+                developmentLanguage: [
+                    'PHP (Laravel, CodeIgniter)',
+                    'JS (JQuery, VueJS)',
+                ]
+            }
+        ];
+
+        // fill to second row of experiences table
+        const experiencesTable = document.getElementById('experiences');
+
+        experiences.forEach((experience, index) => {
+            const row = experiencesTable.insertRow(index + 2);
+            row.insertCell(0).textContent = index + 1;
+            row.insertCell(1).textContent = experience.start;
+            row.insertCell(2).textContent = experience.end;
+            const businessContentCell = row.insertCell(3);
+            // cell 3 text-align: left
+            businessContentCell.style.textAlign = 'left';
+            experience.businessContent.forEach(content => {
+                businessContentCell.innerHTML += content + '<br>';
+            });
+            const areaOfResponsibilityCell = row.insertCell(4);
+            areaOfResponsibilityCell.style.textAlign = 'left';
+            experience.areaOfResponsibility.forEach(content => {
+                areaOfResponsibilityCell.innerHTML += content + '<br>';
+            });
+            row.insertCell(5).textContent = experience.user;
+            row.insertCell(6).textContent = experience.machineOS;
+            row.insertCell(7).textContent = experience.db;
+            const developmentLanguageCell = row.insertCell(8);
+            experience.developmentLanguage.forEach(content => {
+                developmentLanguageCell.innerHTML += content + '<br>';
+            });
+        });
+    }
+    window.onload = fillExperiences;
+</script>
+</html>
