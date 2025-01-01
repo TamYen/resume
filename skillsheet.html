@@ -26,9 +26,17 @@
         .section-title {
             font-size: 16px;
             font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
             text-align: left;
+        }
+        .section-title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .note {
+            font-size: 12px;
+            color: #555;
+            text-align: right;
         }
         .pr-section p {
             margin: 0;
@@ -70,18 +78,13 @@
         </tr>
     </table>
 
-    <!-- Phần PR -->
-    <div class="pr-section">
-        <p>卒業: Trường Đại học Công nghệ Tp.HCM - HUTECH.</p>
-        <p>Ngôn ngữ sử dụng: Java, PHP.</p>
-        <p>Lập trình và tạo testcase dựa trên tài liệu tiếng Nhật.</p>
-        <p>Tôi đang nỗ lực tích lũy kiến thức, kinh nghiệm và khả năng sử dụng tiếng Nhật, mục tiêu trở thành Kỹ sư cầu nối (BrSE) trong 5 năm tới.</p>
-    </div>
-
     <!-- Kỹ năng -->
-    <div class="section-title">技術 (Skill)</div>
-    <table>
-        <tr>
+    <div class="section-title-container">
+        <div class="section-title">技術 (Skill)</div>
+        <div class="note">* Note: S = Specialist, A = Rich experience, B = Work experience level, C = Knowledgeable</div>
+    </div>
+    <table id="skills">
+        <!-- <tr>
             <th rowspan="2">OS</th>
             <td>Windows</td>
             <td>iOS</td>
@@ -137,7 +140,7 @@
             <td></td>
             <td>B</td>
             <td>C</td>
-        </tr>
+        </tr> -->
     </table>
 
     <!-- Kinh nghiệm làm việc -->
@@ -159,31 +162,6 @@
             <th>使用言語<br>Development Language</th>
         </tr>
         <!-- content -->
-        <tr>
-            <td>1</td>
-            <td>2020年5月</td>
-            <td>2020年9月</td>
-            <td style="text-align: left;">
-                Job search site for new graduates
-                <br>
-                Position: Programmer, Tester
-                <br>
-                Team members: 7
-            </td>
-            <td style="text-align: left;">
-                Programming (programming)
-                <br>
-                単体テスト (Unit test)
-            </td>
-            <td>Human Resource</td>
-            <td>Windows</td>
-            <td>MySQL</td>
-            <td>
-                PHP (Fuel)
-                <br>
-                JS (jQuery)
-            </td>
-        </tr>
     </table>
 </body>
 <script>
@@ -194,7 +172,7 @@
                 start: '2020年5月',
                 end: '2020年9月',
                 businessContent: [
-                    'Web system for managing customer information',
+                    'Job search site for new graduates',
                     'Position: Programmer, Tester',
                     'Team members: 5'
                 ],
@@ -215,7 +193,7 @@
                 start: '2020年10月',
                 end: '2021年2月',
                 businessContent: [
-                    'Financial management system',
+                    'Banker management system',
                     'Position: Tester',
                     'Team members: 45'
                 ],
@@ -232,7 +210,7 @@
             {
                 no: 3,
                 start: '2021年4月',
-                end: 'now',
+                end: '2025年1月',
                 businessContent: [
                     'Horse racing prediction sites',
                     'Position: Programmer, BrSE',
@@ -243,6 +221,7 @@
                     'システムテスト (System test)',
                     '仕様書作成 (Create specification)',
                     'デモ (demo)',
+                    'QA',
                 ],
                 user: 'Horse racing fans',
                 machineOS: 'macOS',
@@ -254,10 +233,11 @@
             },
             {
                 no: 3,
-                start: '2022年2月',
-                end: 'now',
+                start: '2023年2月',
+                end: '2025年1月',
                 businessContent: [
-                    'Horse racing prediction sites',
+                    // 社内管理サイト
+                    'Internal management site',
                     'Position: Programmer, BrSE',
                     'Team members: 3',
                 ],
@@ -267,15 +247,156 @@
                     '仕様書作成 (Create specification)',
                     'デモ (demo)',
                 ],
-                user: 'Horse racing fans',
+                user: 'Company staff',
                 machineOS: 'macOS',
-                db: 'Mysql, google sheet',
+                db: 'Mysql',
                 developmentLanguage: [
-                    'PHP (Laravel, CodeIgniter)',
-                    'JS (JQuery, VueJS)',
+                    'PHP (Laravel)',
+                    'JS (JQuery)',
+                ]
+            },
+            {
+                no: 4,
+                start: '2023年2月',
+                end: '2025年1月',
+                businessContent: [
+                    // 	飲み会マッチングアプリ
+                    'Drinking party matching site',
+                    'Position: Programmer, BrSE',
+                    'Team members: 3',
+                ],
+                areaOfResponsibility: [
+                    'プログラミング (Programming)',
+                    'システムテスト (System test)',
+                    '仕様書作成 (Create specification)',
+                    'デモ (demo)',
+                ],
+                user: 'daters',
+                machineOS: 'macOS',
+                db: 'Mysql',
+                developmentLanguage: [
+                    'PHP (Laravel)',
+                    'JS (VueJS, JQuery)',
+                ]
+            },
+            {
+                no: 5,
+                start: '2023年5月',
+                end: '2023年11月',
+                businessContent: [
+                    // 	フットサルコート予約アプリ
+                    'Futsal court reservation app',
+                    'Position: Programmer',
+                    'Team members: 5',
+                ],
+                areaOfResponsibility: [
+                    'プログラミング (Programming)',
+                ],
+                user: 'sports center staff',
+                machineOS: 'macOS',
+                db: 'Mysql',
+                developmentLanguage: [
+                    'PHP (Laravel)',
+                    'Dark (Flutter)',
+                ]
+            },
+            {
+                no: 5,
+                start: '2024年11月',
+                end: '2024年12月',
+                businessContent: [
+                    // OpenAIのアシスタントを使って、社内規則について自動回答ページ
+                    'Internal rules chat bot page',
+                    'Position: Programmer, BrSE',
+                    'Team members: 2',
+                ],
+                areaOfResponsibility: [
+                    'プログラミング (Programming)',
+                    '仕様書作成 (Create specification)',
+                ],
+                user: 'Company staff',
+                machineOS: 'macOS',
+                db: 'Mysql',
+                developmentLanguage: [
+                    'PHP (Laravel)',
+                    'JS (JQuery)',
                 ]
             }
         ];
+
+        const skillsTable = [
+            {
+                type: 'OS/Server/Tools',
+                detail: [
+                    ['MacOS', 'A'],
+                    ['Windows', 'C'],
+                    ['Android', 'C'],
+                    ['Linux', 'B'],
+                    ['GIT', 'A']
+                ]
+            },
+            {
+                type: 'DB',
+                detail: [
+                    ['MySQL', 'A'],
+                    ['PostgreSQL', 'B'],
+                    ['SQLServer', 'C'],
+                ]
+            },
+            {
+                type: 'Development language',
+                detail: [
+                    ['PHP', 'A'],
+                    ['JS', 'A'],
+                    ['Dart', 'B'],
+                    ['Java', 'C'],
+                    ['C/C++', 'C'],
+                    ['C#', 'C'],
+                ]
+            },
+            {
+                type: 'Framework/Library',
+                detail: [
+                    ['Lavavel', 'A'],
+                    ['JQuery', 'A'],
+                    ['VueJS', 'B'],
+                    ['CodeIgniter', 'C'],
+                    ['Flutter', 'B'],
+                    ['Spring', 'C'],
+                    ['FuelPHP', 'C'],
+                ]
+            },
+        ];
+
+        // fill to skills table
+        const skillsTableElement = document.getElementById('skills');
+        skillsTable.forEach((skill, index) => {
+            // insert 2 rows for each skill
+            const row1 = skillsTableElement.insertRow(index * 2);
+            // row1 syle same th
+            row1.style.backgroundColor = '#f2f2f2';
+            row1.style.fontWeight = 'bold';
+            const row2 = skillsTableElement.insertRow(index * 2 + 1);
+            row1.insertCell(0).textContent = skill.type;
+            row2.insertCell(0).textContent = '';
+            // merge 2 cells
+            row1.cells[0].rowSpan = 2;
+            // detail 8 columns fixed
+            const detail = skill.detail;
+            for (let i = 0; i < 7; i++) {
+                row1.insertCell(i + 1).textContent = detail[i] ? detail[i][0] : '';
+                row2.insertCell(i).textContent = detail[i] ? detail[i][1] : '';
+            }
+            // row1.cells[0].rowSpan = 2;
+            // remove empty cells after merge
+            row2.deleteCell(7);
+
+            // skill.detail.forEach((detail, detailIndex) => {
+            //     row1.insertCell(detailIndex + 1).textContent = detail[0];
+            //     row2.insertCell(detailIndex + 1).textContent = detail[1];
+            // });
+        });
+
 
         // fill to second row of experiences table
         const experiencesTable = document.getElementById('experiences');
